@@ -223,7 +223,7 @@ const Login: React.FC = () => {
               },
             ]}
           />
-
+          {/* 封装好的东西要使用js的形式来展示出来-- */}
           {status === 'error' && loginType === 'account' && (
             <LoginMessage
               content={intl.formatMessage({

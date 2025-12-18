@@ -1,3 +1,5 @@
+// app文件，默认为请求头和全局守卫的地方
+
 import { LinkOutlined } from '@ant-design/icons';
 import type { Settings as LayoutSettings } from '@ant-design/pro-components';
 import { SettingDrawer } from '@ant-design/pro-components';
@@ -150,6 +152,6 @@ export const layout: RunTimeLayoutConfig = ({
  * @doc https://umijs.org/docs/max/request#配置
  */
 export const request: RequestConfig = {
-  baseURL: isDev ? '' : 'https://proapi.azurewebsites.net',
+  baseURL: isDev ? '/api' : 'https://proapi.azurewebsites.net',
   ...errorConfig,
 };
